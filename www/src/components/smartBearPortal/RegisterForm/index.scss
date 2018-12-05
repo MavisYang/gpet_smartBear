@@ -1,0 +1,121 @@
+@import "assets/css/custom.scss";
+
+.register-containter {
+  @extend %bgBear;
+  text-align: center;
+  .title {
+    padding-top: 70px;
+    .login-title {
+      background: url("/chatpet/images/icon/banner_login.png") no-repeat;
+      background-size: 100% 100%;
+      width: 100%;
+      height: 340px;
+    }
+  }
+  .register-content {
+    margin-top: 47px;
+    & > div {
+      width: 550px;
+      margin: 20px 0;
+      display: inline-block;
+    }
+    .inputBox {
+      text-align: left;
+      background: #FFFFFF;
+      border-radius: 100px;
+
+      input {
+        -webkit-appearance: none;
+        outline: 0;
+        border: none;
+        //border: 1px solid transparent;
+        @extend %font-30px-Regular;
+        color: #333435;
+        width: 100%;
+        @include heightLine(100px);
+        text-indent: 50px;
+        &:focus {
+          //border:1px solid transparent;
+        }
+
+      }
+      .codeInput {
+        width: 60%;
+        float: left;
+      }
+      .codePrompt {
+        float: left;
+        width: 1px;
+        height: 53px;
+        display: inline-block;
+        background: #DADEE2;
+        margin-top: 24px;
+      }
+      .getCode {
+        float: left;
+        width: 38%;
+        height: 98px;
+        display: inline-block;
+        @extend %font-30px-Medium;
+        color: #AEB5B6;
+      }
+      .getCodeRight {
+        color: #00ADCC;
+      }
+    }
+    .agreementBox {
+      @extend %font-FFFFFF-28px;
+      margin-top: 80px;
+      margin-bottom: 50px;
+      letter-spacing: 1.4px;
+      .selected {
+        width: 32px;
+        height: 32px;
+        display: inline-block;
+        background: url("/chatpet/images/icon/icon_xuanzhong@2x.png") no-repeat;
+        background-size: 32px 32px;
+        vertical-align: middle;
+        margin-bottom: 6px;
+      }
+      .noSelected {
+        background: url("/chatpet/images/icon/icon_weixuanzhong@2x.png") no-repeat;
+        background-size: 32px 32px;
+      }
+      .agreement {
+        text-decoration: underline;
+      }
+    }
+    .btnBox {
+
+      .joinBtn {
+        font-family: PingFangSC-Medium;
+        font-size: 34px;
+        color: #FFFFFF;
+        width: 100%;
+        @include heightLine(100px);
+        background: #E1E1E1;
+        border-radius: 100px;
+        text-align: center;
+        cursor: pointer;
+      }
+      .registerBnt {
+        background-image: linear-gradient(-180deg, #FFFA9B 1%, #FFC63D 100%);
+        color: #EA4325;
+
+      }
+    }
+
+  }
+  .verifyTipBox{
+    @extend %verticalCenter;
+    top: 35%;
+    z-index: 999;
+    @include heightLine(60px);
+    background: rgba(68, 68, 68,.8);
+    border-radius: 100px;
+    display: inline-block;
+    text-align: center;
+    @include font-size-color(400,28,#FFFFFF);
+    padding: 3px 30px;
+  }
+}

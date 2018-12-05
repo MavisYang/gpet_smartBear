@@ -1,0 +1,88 @@
+@import "assets/css/custom.scss";
+.adopt-containter{
+  width: 100%;
+  text-align: center;
+  background-image: linear-gradient(-114deg, #3AD2F1 0%, #66CBE4 100%);
+  padding-bottom: 130px;
+  .content{
+    background: #FFFFFF;
+    border-radius: 20px;
+    margin: 0 20px;
+    padding-top: 42px;
+    padding-bottom: 80px;
+    text-align: center;
+    .title{
+      @include font-size-color(500,46,#00ADCC);
+      letter-spacing: 2.5px;
+      padding: 28px 0;
+    }
+    span img{
+      @include widthHight(70,62);
+      vertical-align: middle;
+      margin-bottom: 10px;
+    }
+
+
+  }
+  .title-one{
+    background: url("/chatpet/images/icon/adopt-title1.png") no-repeat;
+    background-size: 750px 222px;
+    width: 100%;
+    height: 222px;
+  }
+  .content-one{
+    .qrCode{
+      width: calc(270px - 24px);
+      height: calc(270px - 24px);
+      background: #C1F3FF;
+      border-radius: 7px;
+      padding: 12px;
+      margin: 24px auto 32px auto;
+
+      img{
+        @include widthHight(247,247);
+      }
+    }
+    .info{
+      margin-bottom: 36px;
+      @include font-size-color(400,32,#333333);
+      img{
+        @include widthHight(40,40);
+        vertical-align: middle;
+      }
+    }
+    .wechart{
+      img{
+        @include widthHight(525,270);
+      }
+    }
+  }
+
+  .title-two{
+    padding-top: 83px;
+    padding-bottom: 50px;
+    img{
+      @include widthHight(500,70);
+    }
+  }
+  .wechart-one{
+    margin-top: 22px;
+    margin-bottom: 32px;
+    img{
+      @include widthHight(525,550);
+    }
+  }
+  .wechart-two{
+    margin-top: 22px;
+    img{
+      @include widthHight(525,450);
+    }
+  }
+  .wechart-three{
+    margin-top: 70px;
+    margin-bottom: 20px;
+    img{
+      @include widthHight(651,182);
+    }
+  }
+}

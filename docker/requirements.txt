@@ -1,0 +1,1 @@
+git+http://gitlab.gemii.cc:8000/liz-common/liz-common-py-eureka-client.git

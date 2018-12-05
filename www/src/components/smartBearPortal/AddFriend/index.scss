@@ -1,0 +1,24 @@
+@import "assets/css/custom.scss";
+.addFriend-containter{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: url("/chatpet/images/bg/bg-bear-addfriend.png") no-repeat;
+  background-size:100% 100%;
+  .friend-content{
+    text-align: center;
+    position: absolute;
+    @extend %verticalCenter;
+    top: 63%;
+    .qrCode-box{
+      @include widthHight(290,290);
+      .qrCode{
+        @include widthHight(290,290)
+      }
+    }
+    .info-box{
+      @include font-size-color(500,32,#00ADCC);
+      margin-top: 29px;
+    }
+  }
+}

@@ -1,0 +1,100 @@
+
+$green: #39C272;
+$greenHover: #5DD18D;
+$lite-green: #83DFA8;
+$red: #F75A5A;
+$border-gray: #EBEBEB;
+$write: #FFFFFF;
+//mavis add begin
+%font-30px-Regular {
+  font-family: PingFangSC-Regular;
+  font-size: 30px;
+}
+
+%font-30px-Medium {
+  font-family: PingFangSC-Medium;
+  font-size: 30px;
+}
+
+%font-FFFFFF-28px {
+  font-family: PingFangSC-Regular;
+  font-size: 28px;
+  color: #FFFFFF;
+}
+
+%verticalCenter {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+%textHide {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+@mixin font-size-color($font,$size,$color) {
+  font-family: PingFangSC;
+  font-weight: $font;
+  font-size: $size+px;
+  color: $color;
+}
+
+@mixin widthHight($width,$hight) {
+  width: $width+px;
+  height: $hight+px;
+}
+
+@mixin heightLine($height) {
+  height: $height;
+  line-height: $height;
+}
+
+@mixin multiTextHide($num) {
+  display: -webkit-box;
+  display: -moz-box;
+  /* autoprefixer: off */
+  -webkit-box-orient: vertical;
+  -moz-box-orient: vertical;
+  /* autoprefixer: on */
+  -webkit-line-clamp: $num;
+  -moz-line-clamp: $num;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+%bgBear {
+  width: 100%;
+  min-height: 100%;
+  background: url("/chatpet/images/bg/bg-bear.png") no-repeat;
+  background-size: 100% 100%;
+}
+
+%modalWrapper {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(30, 34, 32, 0.40);
+}
+
+%modalBox {
+  background: #FFFFFF;
+  border-radius: 2px;
+  @extend %verticalCenter;
+}
+
+.clearfix:after {
+  content: '';
+  height: 0;
+  display: block;
+  visibility: hidden;
+  clear: both;
+}
+
+.clearfix {
+  zoom: 1;
+}

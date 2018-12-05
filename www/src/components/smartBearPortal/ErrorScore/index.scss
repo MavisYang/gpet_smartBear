@@ -1,0 +1,14 @@
+@import "assets/css/custom.scss";
+.error-containter{
+  @extend %bgBear;
+  .content{
+    @extend %verticalCenter;
+    text-align: center;
+    .text{
+      @include font-size-color(500,34,#FFFFFF);
+    }
+    .errorIcon{
+      margin-top: 60px;
+    }
+  }
+}

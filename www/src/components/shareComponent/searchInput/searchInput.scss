@@ -1,0 +1,25 @@
+@import '../../../assets/css/custom.scss';
+:global {
+    .search-custom {
+        border-radius: 2px;
+        width: 360px;
+        height: 40px;
+        background: #FFFFFF;
+        .ant-input {
+            border: 1px solid transparent;
+            border-radius: 2px;
+            outline: 0 none;
+            &:focus{
+                box-shadow: none;
+            }
+        }
+        &.ant-input-affix-wrapper:hover .ant-input:not(.ant-input-disabled){
+            border-color: #BFC0BF
+        }
+    }
+    .search-border{
+        .ant-input {
+            border: 1px solid #EBEBEB;
+        }
+    }
+}

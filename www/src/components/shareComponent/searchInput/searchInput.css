@@ -1,0 +1,26 @@
+.clearfix:after {
+  content: '';
+  height: 0;
+  display: block;
+  visibility: hidden;
+  clear: both; }
+
+.clearfix {
+  zoom: 1; }
+
+:global .search-custom {
+  border-radius: 2px;
+  width: 360px;
+  height: 40px;
+  background: #FFFFFF; }
+  :global .search-custom .ant-input {
+    border: 1px solid transparent;
+    border-radius: 2px;
+    outline: 0 none; }
+    :global .search-custom .ant-input:focus {
+      box-shadow: none; }
+  :global .search-custom.ant-input-affix-wrapper:hover .ant-input:not(.ant-input-disabled) {
+    border-color: #BFC0BF; }
+
+:global .search-border .ant-input {
+  border: 1px solid #EBEBEB; }

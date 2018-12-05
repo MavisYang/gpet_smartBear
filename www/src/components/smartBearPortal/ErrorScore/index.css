@@ -1,0 +1,31 @@
+.error-containter .content {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%); }
+
+.error-containter {
+  width: 100%;
+  min-height: 100%;
+  background: url("/chatpet/images/bg/bg-bear.png") no-repeat;
+  background-size: 100% 100%; }
+
+.clearfix:after {
+  content: '';
+  height: 0;
+  display: block;
+  visibility: hidden;
+  clear: both; }
+
+.clearfix {
+  zoom: 1; }
+
+.error-containter .content {
+  text-align: center; }
+  .error-containter .content .text {
+    font-family: PingFangSC;
+    font-weight: 500;
+    font-size: 34px;
+    color: #FFFFFF; }
+  .error-containter .content .errorIcon {
+    margin-top: 60px; }

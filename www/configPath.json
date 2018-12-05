@@ -1,0 +1,26 @@
+{
+  "prod":{
+    "accessPath":"/chatpet",
+    "serverPath":{
+      "originName":"cloud.gemii.cc"
+    }
+  },
+  "test":{
+    "accessPath":"http://grouppet.test.gemii.cc:58080/chatpet",
+    "serverPath":{
+      "originName":"test.gemii.cc:58080"
+    }
+  },
+  "dev":{
+    "accessPath":"http://grouppet.dev.gemii.cc:58080/chatpet",
+    "serverPath":{
+      "originName":"dev.gemii.cc:58080"
+    }
+  },
+  "local":{
+    "accessPath":"http://localhost",
+    "serverPath":{
+      "originName":"test.gemii.cc:58080"
+    }
+  }
+}

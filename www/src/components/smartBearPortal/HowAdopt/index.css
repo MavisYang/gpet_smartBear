@@ -1,0 +1,85 @@
+.clearfix:after {
+  content: '';
+  height: 0;
+  display: block;
+  visibility: hidden;
+  clear: both; }
+
+.clearfix {
+  zoom: 1; }
+
+.adopt-containter {
+  width: 100%;
+  text-align: center;
+  background-image: linear-gradient(-114deg, #3AD2F1 0%, #66CBE4 100%);
+  padding-bottom: 130px; }
+  .adopt-containter .content {
+    background: #FFFFFF;
+    border-radius: 20px;
+    margin: 0 20px;
+    padding-top: 42px;
+    padding-bottom: 80px;
+    text-align: center; }
+    .adopt-containter .content .title {
+      font-family: PingFangSC;
+      font-weight: 500;
+      font-size: 46px;
+      color: #00ADCC;
+      letter-spacing: 2.5px;
+      padding: 28px 0; }
+    .adopt-containter .content span img {
+      width: 70px;
+      height: 62px;
+      vertical-align: middle;
+      margin-bottom: 10px; }
+  .adopt-containter .title-one {
+    background: url("/chatpet/images/icon/adopt-title1.png") no-repeat;
+    background-size: 750px 222px;
+    width: 100%;
+    height: 222px; }
+  .adopt-containter .content-one .qrCode {
+    width: calc(270px - 24px);
+    height: calc(270px - 24px);
+    background: #C1F3FF;
+    border-radius: 7px;
+    padding: 12px;
+    margin: 24px auto 32px auto; }
+    .adopt-containter .content-one .qrCode img {
+      width: 247px;
+      height: 247px; }
+  .adopt-containter .content-one .info {
+    margin-bottom: 36px;
+    font-family: PingFangSC;
+    font-weight: 400;
+    font-size: 32px;
+    color: #333333; }
+    .adopt-containter .content-one .info img {
+      width: 40px;
+      height: 40px;
+      vertical-align: middle; }
+  .adopt-containter .content-one .wechart img {
+    width: 525px;
+    height: 270px; }
+  .adopt-containter .title-two {
+    padding-top: 83px;
+    padding-bottom: 50px; }
+    .adopt-containter .title-two img {
+      width: 500px;
+      height: 70px; }
+  .adopt-containter .wechart-one {
+    margin-top: 22px;
+    margin-bottom: 32px; }
+    .adopt-containter .wechart-one img {
+      width: 525px;
+      height: 550px; }
+  .adopt-containter .wechart-two {
+    margin-top: 22px; }
+    .adopt-containter .wechart-two img {
+      width: 525px;
+      height: 450px; }
+  .adopt-containter .wechart-three {
+    margin-top: 70px;
+    margin-bottom: 20px; }
+    .adopt-containter .wechart-three img {
+      width: 651px;
+      height: 182px; }

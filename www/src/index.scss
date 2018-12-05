@@ -1,0 +1,85 @@
+
+:global {
+  * {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    vertical-align: baseline;
+    background: transparent;
+  }
+  body, html, #root, .containter {
+    width: 100%;
+    height: 100%;
+  }
+  ul li {
+    list-style: none;
+  }
+  a, button, input {
+    -webkit-tap-highlight-color: rgba(255, 0, 0, 0);
+    -webkit-appearance: none;
+  }
+
+  textarea::-webkit-input-placeholder,
+  input::-webkit-input-placeholder {
+    color: #BCC4C4;
+  }
+
+  textarea::-moz-input-placeholde,
+  input::-moz-input-placeholder {
+    color: #BCC4C4;
+  }
+
+  textarea::-o-input-placeholder,
+  input::-o-input-placeholder {
+    color: #BCC4C4;
+  }
+  .verticalCenter {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .error-container {
+    min-height: 100%;
+    width: 100%;
+    background: url("/chatpet/images/bg/bg-bear.png") no-repeat;
+    background-size: cover;
+    .error {
+      p {
+        font-family: PingFangSC-Medium;
+        font-size: 34px;
+        color: #FFFFFF;
+        text-align: center;
+      }
+      img {
+        width: 251px;
+        height: 158px;
+        display: block;
+        margin: 8px auto 0;
+      }
+      .img404 {
+        width: 420px;
+        height: 230px;
+        margin: 32px auto 0;
+      }
+      .refreshBtn {
+        width: 224px;
+        height: 85px;
+        line-height: 85px;
+        background: #FFFFFF;
+        border: 2px solid #FFFFFF;
+        border-radius: 100px;
+        font-family: PingFangSC-Medium;
+        font-size: 34px;
+        color: #368EFD;
+        text-align: center;
+        margin: 138px auto 0;
+      }
+    }
+
+  }
+}
+
+
+
